@@ -1,2 +1,2 @@
-require './random'
+require 'random'
 run Sinatra::Application
