@@ -1,4 +1,4 @@
-Generate a random number and return it over HTTP.
+Generate a random integer and return it over HTTP.
  - A simple app to explore Ruby, Sinatra and Heroku in combination
 
 
@@ -9,9 +9,12 @@ Instructions
 
 1. Clone this repository
 (2. bundle install)
-3. rackup -p 9292 config.ru
+3. ruby random.rb
+(more fancy: rackup -p 4567 config.ru)
 
-Now try http://localhost:9292
+Now try http://localhost:4567/?from=1&to=10
+
+The parameters 'from' and 'to' denotes the interval (from <= N < to).
 
 See link above about how to push to Heroku.
 

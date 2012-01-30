@@ -4,5 +4,13 @@
 require 'sinatra'
 
 get '/' do
-  "#{Random.new.rand(1...6)}" # Roll the dice
+	from = params[:from].to_i
+	to = params[:to].to_i
+
+	# Missing params?
+	if from == 0 && to == 0
+		to = 1
+	end
+	
+  	"#{Random.new.rand(from...to)}"
 end
