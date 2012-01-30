@@ -8,8 +8,14 @@ Based on the description at http://devcenter.heroku.com/articles/rack
 Instructions
 
 1. Clone this repository
-2. bundle install
+(2. bundle install)
 3. rackup -p 9292 config.ru
 
 Now try http://localhost:9292
+
+See link above about how to push to Heroku.
+
+Lessons learned:
+If you fail for some reason after having created the heroku app with 'heroku create', then you need to destroy the old app and remove the remote target in 'git remote rm heroku' before strting over with 'heroku create' again.
+
 
