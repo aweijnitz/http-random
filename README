@@ -1,4 +1,4 @@
-Generate a random number and return over HTTP.
+Generate a random number and return it over HTTP.
  - A simple app to explore Ruby, Sinatra and Heroku in combination
 
 
@@ -16,6 +16,4 @@ Now try http://localhost:9292
 See link above about how to push to Heroku.
 
 Lessons learned:
-If you fail for some reason after having created the heroku app with 'heroku create', then you need to destroy the old app and remove the remote target in 'git remote rm heroku' before strting over with 'heroku create' again.
-
-
+If you fail for some reason after having created the heroku app with 'heroku create', then you need to destroy the old app and remove the remote target in 'git remote rm heroku' before starting over with 'heroku create' again.
