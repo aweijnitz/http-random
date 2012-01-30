@@ -7,9 +7,9 @@ get '/' do
 	from = params[:from].to_i
 	to = params[:to].to_i
 
-	# Missing params?
-	if from == 0 && to == 0
-		to = 1
+	# Missing params or bad params?
+	if from == to
+		to = from + 1
 	end
 	
   	"#{Random.new.rand(from...to)}"
